@@ -1,6 +1,6 @@
 {
   "name": "react-native-cached-image",
-  "version": "1.4.5",
+  "version": "2.0.0",
   "description": "CachedImage component for react-native",
   "main": "index.js",
   "scripts": {
@@ -12,19 +12,15 @@
       "NODE_ENV": "test"
     },
     "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/CachedImageExample/",
-      "/__tests__/SimpleMemoryCache.js",
-      "/__tests__/SimpleMemoryFs.js"
+      "/node_modules/"
     ],
     "modulePathIgnorePatterns": [
-      "/CachedImageExample/"
     ],
     "verbose": true
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kfiroo/react-native-cached-image"
+    "url": "https://github.com/bitlab-code/react-native-cached-image"
   },
   "keywords": [
     "react-native",
@@ -34,9 +30,9 @@
   "author": "kfiroo <kfirgolan@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kfiroo/react-native-cached-image/issues"
+    "url": "https://github.com/bitlab-code/react-native-cached-image/issues"
   },
-  "homepage": "https://github.com/kfiroo/react-native-cached-image",
+  "homepage": "https://github.com/bitlab-code/react-native-cached-image",
   "files": [
     "index.js",
     "CachedImage.js",
@@ -53,8 +49,11 @@
     "lodash": "4.17.11",
     "prop-types": "15.5.10",
     "react-native-clcasher": "1.0.0",
-    "rn-fetch-blob": "RateBeer/rn-fetch-blob#v0.10.16",
     "url-parse": "1.4.4"
+  },
+  "peerDependencies": {
+    "rn-fetch-blob": "0.10.15",
+    "@react-native-community/netinfo": "3"
   },
   "devDependencies": {
     "babel-jest": "^21.0.2",
